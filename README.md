@@ -1,43 +1,62 @@
-# Astro Starter Kit: Minimal
+# Kimba Design, Website and Blog
+> Home of Kimba dsign, specialising in sustainable web design. 
+> An experiment in using Astro which has recently released 1.0 Beta.
+> Live project [kimba.design](https://kimba.design)
 
-```
-npm init astro -- --template minimal
-```
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## General Information
+- Provide general information about your project here.
+- What problem does it (intend to) solve?
+- What is the purpose of your project?
+- Why did you undertake it?
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## Technologies Used
+- Tech 1 - version 1.0
+- Tech 2 - version 2.0
+- Tech 3 - version 3.0
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Features
+List the ready features here:
+- Awesome feature 1
+- Awesome feature 2
+- Awesome feature 3
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Screenshots
+![Example screenshot](./img/screenshot.png)
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+## Setup
+What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+Proceed to describe how to install / setup one's local environment / get started with the project.
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+## Project Status
+Project is: _in progress_
+
+
+## Todo
+
+To do:
+- Feature to be added 1
+- Feature to be added 2
+
+## Contact
+Created by [@PJLittlewood](https://kimba.design) - feel free to contact me!
