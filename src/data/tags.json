@@ -1,0 +1,11 @@
+{
+  "technology": {
+    "color": "orange"
+  },
+  "ecology": {
+    "color": "green"
+  },
+  "design": {
+    "color": "blue"
+  }
+}

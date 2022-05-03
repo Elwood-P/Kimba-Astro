@@ -1,0 +1,7 @@
+@import './fluid.css';
+
+@layer utilities {
+  .imgr-contrast {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}

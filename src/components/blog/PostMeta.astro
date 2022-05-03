@@ -1,0 +1,19 @@
+---
+import '../../styles/app.css';
+import PostMetaTagList from './PostMetaTagList.astro';
+import authorData from '../../data/authors.json';
+
+const { content } = Astro.props;
+const { name: authorName } = authorData[content.author];
+---
+
+<div class="[ flex flex-wrap justify-center items-center ][ space-x-4 ][ text-fl-300 ]">
+    <div class="[ flex items-center ][ space-x-2 ]">
+      <img src={`/assets/images/avatars/avatar-${content.author}.png`} class="[ rounded-full ][ imgr-contrast ]" alt={authorName} width="40" height="40">
+      <p class="">{authorName}</p>
+    </div>
+    <p aria-hidden="true">|</p>
+    <time class="bg">{content.date}</time>
+    <p aria-hidden="true" class="[ invisible sm:visible ][ w-full h-0 sm:w-auto sm:h-auto ]">|</p>
+    <PostMetaTagList tags={content.tags} />
+</div>

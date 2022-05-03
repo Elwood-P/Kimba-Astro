@@ -1,0 +1,9 @@
+.markdown-block {
+  > * + * {
+    @apply text-fl-mt;
+  }  
+  p {
+    @apply text-fl-400;
+    max-width: 58ch; /* Set low as Europa has big 0! In practice this works out abbout 73 characters. */
+  }
+}

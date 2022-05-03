@@ -1,0 +1,6 @@
+body {
+  @apply bg-chalk;
+  /* font-family: europa,sans-serif; */
+  @apply font-sans text-gray font-normal;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}

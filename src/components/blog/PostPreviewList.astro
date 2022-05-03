@@ -1,0 +1,27 @@
+---
+import '../../styles/app.css';
+import Button from '../UI/Button.astro';
+import PostPreview from './PostPreview.astro';
+import tagsData from '../../data/tags.json';
+
+const {tag, allPosts} = Astro.props;
+---
+
+<div class="[ container ][ max-w-[760px] ][ mx-auto px-8 my-fl-40 ]">
+  <header class="[ flex flex-col items-center space-y-10 ][ my-fl-40 text-center ]">
+    <h1 class="text-fl-800 font-bold">Blog</h1>
+    <p class="text-fl-500">Wholesome insights from our journey to create a sustainable business, green the web and create better digital experiences.</p>
+    <div class="flex flex-row items-center space-x-3">
+      <Button href="/posts/" className={`button--sm ${tag ? 'button--light' : ''}`} }>All</Button>
+      {Object.keys(tagsData).map((tagData) => 
+        <Button href={`/posts/tag/${tagData}`} className={`capitalize button--sm ${tag === tagData ? 'button--' + tagsData[tagData].color : 'button--light-' + tagsData[tagData].color}`}>
+          {tagData}
+        </Button>
+      )}
+    </div>
+  </header>
+
+  <div class="flex flex-col space-y-20">
+    {allPosts.map((post)=> <PostPreview post={post} />)}
+  </div>
+</div>

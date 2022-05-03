@@ -1,0 +1,69 @@
+@layer components {
+
+  /* Default */
+  .button {
+    @apply 
+      inline-flex items-center justify-center
+      min-h-[42px] px-6
+      bg-gray rounded-full
+      text-base font-semibold text-chalk text-center whitespace-nowrap;
+    &:hover {
+      @apply bg-gray-700;
+    }
+  }
+
+  /* Size */
+  .button--sm {
+    @apply 
+      min-h-[27px] px-3
+      text-fl-100 leading-none font-normal;
+  }
+
+  /* Colors */
+  .button--light {
+    @apply bg-gray/[.08] text-gray;
+    &:hover {
+      @apply bg-gray text-chalk;
+    }
+  }
+
+  .button--green {
+    @apply bg-green text-gray;
+    &:hover {
+      @apply bg-green text-gray;
+    }
+  }
+  .button--light-green {
+    @apply bg-gray/[.08] text-gray;
+    &:hover {
+      @apply bg-green;
+    }
+  }
+
+  .button--orange {
+    @apply bg-orange text-gray;
+    &:hover {
+      @apply bg-orange text-gray;
+    }
+  }
+  .button--light-orange {
+    @apply bg-gray/[.08] text-gray;
+    &:hover {
+      @apply bg-orange;
+    }
+  }
+
+  .button--blue {
+    @apply bg-blue text-gray;
+    &:hover {
+      @apply bg-blue text-gray;
+    }
+  }
+  .button--light-blue {
+    @apply bg-gray/[.08] text-gray;
+    &:hover {
+      @apply bg-blue;
+    }
+  }
+
+}

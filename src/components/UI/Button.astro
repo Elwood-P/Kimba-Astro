@@ -1,0 +1,10 @@
+---
+import '../../styles/app.css';
+// See styles/components/button.css
+const {href, className} = Astro.props;
+
+---
+
+<a href={href} class=`button ${className ? className : ''}`>
+  <slot />
+</a>

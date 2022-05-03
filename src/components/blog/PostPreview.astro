@@ -1,0 +1,15 @@
+---
+import '../../styles/app.css';
+import PostMeta from './PostMeta.astro';
+import Button from '../UI/Button.astro';
+
+const {post} = Astro.props;
+---
+
+<article class="[ flex flex-col items-center space-y-4 ][ pb-20 ][ border-b border-gray border-opacity-10 ][ text-center ]">
+  <h1 class="text-fl-600 font-bold">{post.frontmatter.title}</h1>
+  <PostMeta content={post.frontmatter} />
+  <p class="text-fl-400 ">{post.frontmatter.description}</p>
+  <Button href={post.url} className="!mt-8">Read More</Button>
+</article>
+

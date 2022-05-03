@@ -1,0 +1,23 @@
+---
+import '../../../styles/app.css';
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import PostPreviewList from '../../../components/blog/PostPreviewList.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { tag: 'ecology' } },
+    { params: { tag: 'technology' } },
+    { params: { tag: 'design' } }
+  ];
+}
+const {tag} = Astro.params;
+
+let allPosts = await Astro.glob('../*.md');
+allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+
+allPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag,0));
+---
+
+<SiteLayout title="Kimba Design" description="Kimba Design, Sustainable Web Design">
+  <PostPreviewList tag={tag} allPosts={allPosts}/>
+</SiteLayout>

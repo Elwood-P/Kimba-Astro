@@ -1,0 +1,11 @@
+---
+import '../../styles/app.css';
+import tagsData from '../../data/tags.json';
+const { tags } = Astro.props;
+---
+
+<ul class="[ flex items-center ][ space-x-3 ][ text-fl-100 leading-none ]">
+  {tags.map((tag) => 
+    <li href="#" class={`[ px-3 py-1.5 ][ button--${tagsData[tag].color} ][ rounded-full ][ leading-none capitalize ]`}>{tag}</li>
+  )}
+</ul>

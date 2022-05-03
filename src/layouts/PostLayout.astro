@@ -1,0 +1,22 @@
+---
+import '../styles/app.css';
+import SiteLayout from './SiteLayout.astro';
+import PostMeta from '../components/blog/PostMeta.astro';
+
+const {content} = Astro.props;
+---
+
+<SiteLayout title={content.title} description={content.description}>
+  <div class="[ container ][ max-w-[760px] ][ mx-auto px-8 ]">
+
+    <header class="[ flex flex-col space-y-4 ][ my-fl-40 text-center ]">
+      <h1 class="text-fl-800 font-bold">{content.title}</h1>
+      <PostMeta content={content} />
+    </header>
+
+    <article class="[ markdown-block ][ my-fl-40 ]">
+      <slot />
+    </article>  
+
+  </div>
+</SiteLayout>

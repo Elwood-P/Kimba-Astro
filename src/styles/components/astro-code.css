@@ -1,0 +1,10 @@
+.astro-code {
+  @apply
+    p-8 
+    !bg-gray-500 rounded-md
+    text-fl-400 leading-none;
+  code {
+    @apply text-fl-100;
+    line-height: 1.6;
+  }
+}
