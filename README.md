@@ -1,62 +1,35 @@
-# Kimba Design, Website and Blog
-> Home of Kimba dsign, specialising in sustainable web design. 
-> An experiment in using Astro which has recently released 1.0 Beta.
-> Live project [kimba.design](https://kimba.design)
+![Screenshot](./img/screenshot.png)
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
-
-
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+# Kimba Design: Website & Blog
+> Home of Kimba Design. We build efficient, eco-friendly websites.  
+> 🚀 An experiment in using Astro SSG which has recently released 1.0 Beta.  
+> Live project [kimba.design](https://kimba.design)  
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- [Astro 1.0.0-beta.17](https://github.com/withastro/astro)
+- [Tailwind v3.0.24](https://github.com/tailwindlabs/tailwindcss) via [astrojs/tailwind v0.2.0](https://github.com/withastro/astro/tree/main/packages/integrations/tailwind)
+- See [package-lock.json](https://github.com/Elwood-P/Kimba-Astro/blob/main/package-lock.json) for complete list
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
+- Astro blog with tags
+- Custom fluid Tailwind text and vertical spacing utlitities
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Project Status
-Project is: _in progress_
+```
+# Install dependencies
+$ npm install
+```
 
 
 ## Todo
+- [ ] Homepage
+- [ ] Pagination on index pages
+- [ ] Contact Form
+- [ ] Polish custom TW utilities - to be extracted into a plugin  
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
 
 ## Contact
-Created by [@PJLittlewood](https://kimba.design) - feel free to contact me!
+Created by [@Elwood-P](https://kimba.design)
