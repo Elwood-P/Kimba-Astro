@@ -1,7 +1,9 @@
-![Screenshot](./img/screenshot.png)
-
 ![Version](https://img.shields.io/badge/Version-0.0.1-blue)
 <!-- When published use this for automatic badge udpate /github/package-json/v/Elwood-P/Kimba-Astro -->
+
+
+![Screenshot](./img/screenshot.png)
+
 
 # Kimba Design: Website & Blog
 > Home of Kimba Design. We build efficient, eco-friendly websites.  
