@@ -6,7 +6,7 @@
 
 
 # Kimba Design: Website & Blog
-> Home of Kimba Design. We build efficient, eco-friendly websites.  
+> Home of Kimba Design. Efficient, eco-friendly websites.  
 > 🚀 An experiment in using Astro SSG which has recently released 1.0 Beta.  
 > Live project [kimba.design](https://kimba.design)  
 
