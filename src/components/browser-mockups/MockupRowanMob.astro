@@ -1,0 +1,13 @@
+---
+import MockupWrapper from './MockupWrapper.astro';
+const { className } = Astro.props;
+---
+
+<MockupWrapper borderRadius="16px" className={className}>
+  <img
+    src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-mob.png?q=75&auto=format"
+    width="202"
+    height="410"
+    alt="Rowan Clothing wesbite - mobile view"
+  />
+</MockupWrapper>

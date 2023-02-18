@@ -1,11 +1,66 @@
 ---
 import '../styles/app.css';
 import SiteLayout from '../layouts/SiteLayout.astro';
+import MockupRowanGroup from '../components/browser-mockups/MockupRowanGroup.astro';
 ---
 
 <SiteLayout title="Kimba Design" description="Kimba Design, Sustainable Web Design">
-	Homepage
-	Hello Netlify!
-	This is dev.
-</SiteLayout>
 
+  <div class="[ container ][ max-w-[1396px] ][ mx-auto px-8 ]">
+    <section class="[ flex flex-col items-center ][ my-32 ][ text-center ]">
+      <h1>Sustainable ecommerce</h1>
+      <p>We build bespoke, efficient, eco-friendly, websites.</p>
+      <a href="#section--greener">Explore</a>
+			<MockupRowanGroup />
+    </section>
+
+    <section>
+      <div>
+        <h2>Building a greener web</h2>
+        <p>
+          The move to an online world has been assumed to be greener, but its environmental impacts are being overlooked. Vast amounts of
+          data is being stored and transmitted indiscriminately, and the data centres responsible require immense amounts of energy.
+        </p>
+        <p>We build low carbon websites to help combat this growing issue. Read more about how and why, on our blog.</p>
+        <a href="/posts">Visit Blog</a>
+      </div>
+      <div>
+        <p>If the internet was a country, it would be the 7th largest polluter</p>
+        <a href="#">nature.com</a>
+      </div>
+    </section>
+
+    <section>
+      <div>Stats image</div>
+      <div>
+        <h2>Efficient websites are good for business</h2>
+        <p>
+          Efficiently built websites load quickly, and a fast loading website is good for business. Not only will it provide a better
+          experience for users, but it can also give your business an advantage in the search engine rankings.
+        </p>
+      </div>
+      <div>
+        <p>BBC has seen that they lose an additional 10% of users for every additional second it takes for their site to load.</p>
+        <a href="#">WPO Stats</a>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>We're New!</h2>
+        <p>
+          Check out some of our sample projects while we work with our first clients. These ecommerce projects are all powered by highly
+          optimised WordPress, hosted on <a href="#">green hosting</a>. To learn more about how we optimise WordPress, take a look at our
+          blog.
+        </p>
+        <p>We build low carbon websites to help combat this growing issue. Read more about how and why, on our blog.</p>
+        <a href="/posts">Visit Blog</a>
+      </div>
+      <ul>
+        <li><a href="#">rowanclothing.co.uk</a></li>
+        <li><a href="#">cafecacaoette.co.uk</a></li>
+        <li><a href="#">waterandwillow.co.uk</a></li>
+      </ul>
+    </section>
+  </div>
+</SiteLayout>
