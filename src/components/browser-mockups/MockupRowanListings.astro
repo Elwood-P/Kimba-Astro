@@ -1,9 +1,9 @@
 ---
 import MockupWrapper from './MockupWrapper.astro';
-const { className } = Astro.props;
+const { className, dataRellaxSpeed } = Astro.props;
 ---
 
-<MockupWrapper className={className}>
+<MockupWrapper className={className} dataRellaxSpeed={dataRellaxSpeed}>
   <img
     src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-listings.png?q=50&auto=format"
     width="300"

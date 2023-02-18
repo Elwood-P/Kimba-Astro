@@ -11,6 +11,8 @@ module.exports = {
     'button--light-blue',
     'button--orange',
     'button--light-orange',
+    'rounded-[16px]',
+    'rounded-[10px]',
   ],
   theme: {
     colors: {

@@ -4,8 +4,12 @@ import MockupRowanListings from './MockupRowanListings.astro';
 import MockupRowanMob from './MockupRowanMob.astro';
 ---
 
-<div class="[ flex items-start ][ mt-32 ]">
-  <MockupRowanMob className="[ mt-[-5%] mr-[2%] ]" />
-  <MockupRowanDT />
-  <MockupRowanListings className="[ mt-[8.4%] ml-[-2%] ]" />
+<div class="[ flex items-start ][ mt-[500px] ]">
+  <MockupRowanMob className="[ mt-[-5%] mr-[2%] ][ rellax ]" dataRellaxSpeed="2" />
+  <MockupRowanDT className="rellax" dataRellaxSpeed="3" />
+  <MockupRowanListings className="[ mt-[8.4%] ml-[-2%] ][ rellax ]" dataRellaxSpeed="5" />
 </div>
+
+<script>
+  var rellax = new Rellax('.rellax');
+</script>
