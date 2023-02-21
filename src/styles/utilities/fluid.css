@@ -76,6 +76,13 @@
     @apply text-fluid;
   }
 
+  .text-fl-700 {
+    --min-font-size: 37;
+    --max-font-size: 52;
+    line-height: 1.1;
+    @apply text-fluid;
+  }
+
   .text-fl-800 {
     --min-font-size: 44.64;
     --max-font-size: 62;

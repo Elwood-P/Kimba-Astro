@@ -2,64 +2,79 @@
 import '../styles/app.css';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import MockupRowanGroup from '../components/browser-mockups/MockupRowanGroup.astro';
+import MockupStats from '../components/browser-mockups/MockupStats.astro';
+import Button from '../components/UI/Button.astro';
+import Quote from '../components/featured-content/Quote.astro';
+import ProjectLink from '../components/featured-content/ProjectLink.astro';
 ---
 
 <SiteLayout title="Kimba Design" description="Kimba Design, Sustainable Web Design">
-
-  <div class="[ container ][ max-w-[1396px] ][ mx-auto px-8 mb-[1000px] ]">
-    <section class="[ flex flex-col items-center ][ my-32 ][ text-center ]">
-      <h1>Sustainable ecommerce</h1>
-      <p>We build bespoke, efficient, eco-friendly, websites.</p>
-      <a href="#section--greener">Explore</a>
-			<MockupRowanGroup />
+  <!-- <div class="[ grid flex-col gap-y-56 ][ mb-96 ]"> -->
+    <div>
+    <!-- Hero -->
+    <section class="[ container-fluid ][ flex flex-col items-center ][ px-8 mt-32 ][ text-center ]">
+      <h1 class="[ mb-4 ][ text-fl-800 font-bold ]">Sustainable ecommerce</h1>
+      <p class="[ mb-8 ][ text-fl-500 ]">We build bespoke, efficient, eco-friendly, websites.</p>
+      <Button href="#section--greener">Explore</Button>
+      <MockupRowanGroup />
     </section>
 
-    <section>
-      <div>
-        <h2>Building a greener web</h2>
-        <p>
+    <!-- Section Greener -->
+    <section id="section--greener" class="[ container-fluid ][ grid grid-cols-12 gap-x-10 ]">
+      <div class="[ col-span-6 space-y-8 ]">
+        <h2 class="[ text-fl-700 font-bold ]">Building a greener web</h2>
+        <p class="text-fl-400">
           The move to an online world has been assumed to be greener, but its environmental impacts are being overlooked. Vast amounts of
           data is being stored and transmitted indiscriminately, and the data centres responsible require immense amounts of energy.
         </p>
-        <p>We build low carbon websites to help combat this growing issue. Read more about how and why, on our blog.</p>
-        <a href="/posts">Visit Blog</a>
+        <p class="text-fl-400">We build low carbon websites to help combat this growing issue. Read more about how and why, on our blog.</p>
+        <Button className="!mt-10" href="/posts">Visit Blog</Button>
       </div>
-      <div>
-        <p>If the internet was a country, it would be the 7th largest polluter</p>
-        <a href="#">nature.com</a>
-      </div>
-    </section>
-
-    <section>
-      <div>Stats image</div>
-      <div>
-        <h2>Efficient websites are good for business</h2>
-        <p>
-          Efficiently built websites load quickly, and a fast loading website is good for business. Not only will it provide a better
-          experience for users, but it can also give your business an advantage in the search engine rankings.
-        </p>
-      </div>
-      <div>
-        <p>BBC has seen that they lose an additional 10% of users for every additional second it takes for their site to load.</p>
-        <a href="#">WPO Stats</a>
+      <div class="[ col-span-5 col-start-8 self-center ]">
+        <Quote color="green" linkText="nature.com" href="https://www.nature.com/articles/d41586-018-06610-y">
+          If the internet was a country, it would be the 7th largest polluter.
+        </Quote>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>We're New!</h2>
-        <p>
+    <!-- Section Efficient -->
+    <div class="relative">
+      <section class="[ container-fluid ][ grid grid-cols-12 gap-x-10 ]">
+        <div class="[ col-span-5 ]">
+          <div
+            class="[ absolute left-0 w-[45%] max-w-fit ] [ before:absolute before:w-[30%] before:content-[''] before:inset-0 before:top-[-50px] before:bottom-[-100px] before:bg-gradient-to-r before:from-chalk before:to-transparent ]"
+          >
+            <MockupStats />
+          </div>
+        </div>
+        <div class="[ col-span-6 col-start-7 space-y-8 ]">
+          <h2 class="[ text-fl-700 font-bold ]">Efficient websites are good for business</h2>
+          <p class="text-fl-400">
+            Efficiently built websites load quickly, and a fast loading website is good for business. Not only will it provide a better
+            experience for users, but it can also give your business an advantage in the search engine rankings.
+          </p>
+          <Quote color="orange" linkText="WPO Stats" href="https://wpostats.com/2017/03/03/bbc-load-abandonment.html">
+            BBC has seen that they lose an additional 10% of users for every additional second it takes for their site to load.
+          </Quote>
+        </div>
+      </section>
+    </div>
+
+    <!-- Section New -->
+    <section class="[ container-fluid ][ grid grid-cols-12 gap-x-10 ]">
+      <div class="[ col-span-5 space-y-8 ]"> 
+        <h2 class="[ text-fl-700 font-bold ]">We're New!</h2>
+        <p class="text-fl-400">
           Check out some of our sample projects while we work with our first clients. These ecommerce projects are all powered by highly
           optimised WordPress, hosted on <a href="#">green hosting</a>. To learn more about how we optimise WordPress, take a look at our
           blog.
-        </p>
-        <p>We build low carbon websites to help combat this growing issue. Read more about how and why, on our blog.</p>
-        <a href="/posts">Visit Blog</a>
+        </p>  
+        <Button href="/posts">Explore</Button>
       </div>
-      <ul>
-        <li><a href="#">rowanclothing.co.uk</a></li>
-        <li><a href="#">cafecacaoette.co.uk</a></li>
-        <li><a href="#">waterandwillow.co.uk</a></li>
+      <ul  class="[ col-span-6 col-start-7 space-y-8 ]">
+        <ProjectLink href="#" text="rowanclothing.co.uk" bgImgURL="https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-rowan.png?q=50&auto=format" />
+        <ProjectLink href="#" text="cafecacaoette.co.uk" bgImgURL="https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-rowan.png?q=50&auto=format" />
+        <ProjectLink href="#" text="waterandwillow.co.uk" bgImgURL="https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-rowan.png?q=50&auto=format" />
       </ul>
     </section>
   </div>
