@@ -12,5 +12,8 @@
     "@astrojs/tailwind": "^3.0.1",
     "astro": "^2.0.14",
     "postcss-import": "^14.1.0"
+  },
+  "dependencies": {
+    "astro-icon": "^0.8.0"
   }
 }
