@@ -1,9 +1,9 @@
 ---
-import MockupWrapper from './MockupWrapper.astro';
+import ShadowWrapper from '../../UI/ShadowWrapper.astro';
 const { className, dataRellaxSpeed } = Astro.props;
 ---
 
-<MockupWrapper borderRadius="16px" className={className} dataRellaxSpeed={dataRellaxSpeed}>
+<ShadowWrapper borderRadius="16px" className={className} dataRellaxSpeed={dataRellaxSpeed}>
   <img
     src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-mob.png?q=75&auto=format"
     width="202"

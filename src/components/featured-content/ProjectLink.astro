@@ -1,7 +1,25 @@
 ---
-const { href, Text, bgImgURL } = Astro.props;
+import ShadowWrapper from '../UI/ShadowWrapper.astro';
+import Button from '../UI/Button.astro';
+
+const { href, text, bgImgURL } = Astro.props;
 ---
 
-<li class={`w-100 p-8 bg-[url('${bgImgURL}')]`}>
-Hello sfdssssssssssssssssssssss
-</li>
+<ShadowWrapper shadowDepth="shallow">
+  <li class={`relative w-100 p-8 || before:absolute before:inset-0 before:bg-cover before:opacity-20 before:bg-[url('${bgImgURL}')]`}>
+    <div class="relative z-10 || flex justify-center items-center">
+      <a href={href}
+        ><div>{text}</div>
+        <button>go</button>
+      </a>
+    </div>
+  </li>
+</MockupWrapper>
+
+<style>
+  /* Workaround to get tailwind to include class since its generated dynamically
+     TODO: Fix! */
+  .ignore-me {
+    @apply before:bg-[url('https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-rowan.png?q=50&auto=format')];
+  }
+</style>
