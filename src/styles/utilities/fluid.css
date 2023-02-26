@@ -52,6 +52,12 @@
     @apply text-fluid;
   }
 
+  .text-fl-200 {
+    --min-font-size: 13;
+    --max-font-size: 16;
+    @apply text-fluid;
+  }
+
   .text-fl-300 {
     --min-font-size: 15.4285714278;
     --max-font-size: 18;
