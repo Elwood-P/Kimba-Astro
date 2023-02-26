@@ -6,7 +6,7 @@
       inline-flex items-center justify-center
       min-h-[42px] px-6
       bg-gray rounded-full
-      text-base font-semibold text-chalk text-center whitespace-nowrap;
+      text-fl-300 font-semibold text-chalk text-center whitespace-nowrap;
     &:hover {
       @apply bg-gray-700;
     }
@@ -24,6 +24,13 @@
   }
 
   /* Colors */
+  .button--inverted {
+    @apply bg-chalk text-gray;
+    &:hover {
+      @apply bg-chalk text-gray-700;
+    }
+  }
+
   .button--light {
     @apply bg-gray/[.08] text-gray;
     &:hover {
