@@ -1,142 +1,48 @@
 /* ------------------ 
-  Fluid Utilities
-
-  These utilities scale linearly from their min value to their max value between the screen widths defined (--min-vw & --max-vw)
-  Primarily used for typography and vertical spaceing
-  Inspired by: https://www.madebymike.com.au/writing/precise-control-responsive-typography 
-  Uses css clamp instead of media queires
------------------- */
-
-/* Sets minimum and maximum screen widths */
-:root {
-  --min-vw: 400;
-  --max-vw: 1280;
-}
-
-*[class*='-fl-'] {
-  --target-property-value: calc(
-    (var(--min-property-value) * 1px) +
-      (var(--max-property-value) - var(--min-property-value)) *
-      ((100vw - (var(--min-vw) * 1px)) / (var(--max-vw) - var(--min-vw)))
-  );
-  --property-value: clamp(
-    calc(var(--min-property-value) * 1px),
-    var(--target-property-value),
-    calc(var(--max-property-value) * 1px)
-  );
-}
-
-/* ------------------ 
   Fluid text styles
 ------------------ */
 
 @layer utilities {
-  .text-fluid {
-    /* Used only for @apply  */
-    --target-font-size: calc(
-      (var(--min-font-size) * 1px) +
-        (var(--max-font-size) - var(--min-font-size)) *
-        ((100vw - (var(--min-vw) * 1px)) / (var(--max-vw) - var(--min-vw)))
-    );
-    --font-size: clamp(
-      calc(var(--min-font-size) * 1px),
-      var(--target-font-size),
-      calc(var(--max-font-size) * 1px)
-    );
-    font-size: var(--font-size);
-  }
+  /* Font Size */
 
   .text-fl-100 {
-    --min-font-size: 12.8571428565;
-    --max-font-size: 15;
-    @apply text-fluid;
+    font-size: fluid(12px, 15px, toRem);
   }
 
   .text-fl-200 {
-    --min-font-size: 13;
-    --max-font-size: 16;
-    @apply text-fluid;
+    font-size: fluid(13px, 16px, toRem);
   }
 
   .text-fl-300 {
-    --min-font-size: 15.4285714278;
-    --max-font-size: 18;
-    @apply text-fluid;
+    font-size: fluid(15px, 18px, toRem);
   }
 
   .text-fl-400 {
-    --min-font-size: 18;
-    --max-font-size: 21;
-    @apply text-fluid;
+    font-size: fluid(18px, 21px, toRem);
   }
 
   .text-fl-500 {
-    --min-font-size: 21;
-    --max-font-size: 24;
-    @apply text-fluid;
+    font-size: fluid(21px, 24px, toRem);
   }
 
   .text-fl-600 {
-    --min-font-size: 26.6;
-    --max-font-size: 38;
-    @apply text-fluid;
+    font-size: fluid(26px, 38px, toRem);
   }
 
   .text-fl-700 {
-    --min-font-size: 37;
-    --max-font-size: 52;
+    font-size: fluid(37px, 52px, toRem);
     line-height: 1.1;
-    @apply text-fluid;
   }
 
   .text-fl-800 {
-    --min-font-size: 44.64;
-    --max-font-size: 62;
+    font-size: fluid(44px, 62px, toRem);
     line-height: 1.1;
-    @apply text-fluid;
   }
 
-  .text-fl-mb {
-    margin-bottom: calc(var(--font-size) * 2);
+  /* Vertical Rhythm */
+
+  .my-fl-40 {
+    margin-block: fluid(80px, 120px, toRem);
   }
-  .text-fl-mt {
-    margin-top: calc(var(--font-size) * 2);
-  }
-}
-
-/* ------------------ 
-  Fluid Verttical Rhythm
------------------- */
-
-*[class*='my-fl-'],
-*[class*='mb-fl-'] {
-  --target-vspace: calc(
-    (var(--min-vspace) * 1px) + (var(--max-vspace) - var(--min-vspace)) *
-      ((100vw - (var(--min-vw) * 1px)) / (var(--max-vw) - var(--min-vw)))
-  );
-  --vspace: clamp(
-    calc(var(--min-vspace) * 1px),
-    var(--target-vspace),
-    calc(var(--max-vspace) * 1px)
-  );
-}
-
-.my-fl-40 {
-  --min-vspace: 80;
-  --max-vspace: 120;
-  margin-top: var(--vspace);
-  margin-bottom: var(--vspace);
-}
-
-.mb-fl-40 {
-  --min-vspace: 80;
-  --max-vspace: 160;
-  margin-bottom: var(--vspace);
-}
-
-.py-fl-40 {
-  --min-vspace: 80;
-  --max-vspace: 120;
-  padding-top: var(--vspace);
-  padding-bottom: var(--vspace);
+  
 }
