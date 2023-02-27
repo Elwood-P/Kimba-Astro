@@ -1,6 +1,6 @@
 .markdown-block {
   > * + * {
-    @apply text-fl-mt;
+    /* @apply text-fl-mt; */
   }  
   p {
     @apply text-fl-400;
