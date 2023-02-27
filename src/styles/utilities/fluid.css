@@ -36,7 +36,7 @@
 
   .text-fl-800 {
     font-size: fluid(44px, 62px, toRem);
-    line-height: 1.1;
+    line-height: .9;
   }
 
   /* Vertical Rhythm */
@@ -44,5 +44,5 @@
   .my-fl-40 {
     margin-block: fluid(80px, 120px, toRem);
   }
-  
+
 }
