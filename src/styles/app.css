@@ -1,3 +1,4 @@
+@import './fonts/typekit.css';
 @import './tailwind/base.css';
 @import './global.css';
 @import './layout/layout.css';
