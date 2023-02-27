@@ -1,6 +1,109 @@
 ---
-import '../styles/app.css';
+import Button from './UI/Button.astro';
+import kimbaLogo from '../images/ui/kimba-logo.svg';
+import Icon from 'astro-icon';
+
+const year = new Date().getFullYear();
 ---
 
 <footer>
+  <div class="py-32 mx-4 || bg-gray-400 rounded-tl-[180px] rounded-br-[180px] || text-chalk">
+    <div class="container-fluid || grid grid-cols-12 gap-x-10">
+      <h2 class="col-span-5 || text-fl-700 font-bold">Ready to discuss your project?</h2>
+      <div class="col-span-6 col-start-7 space-y-12 || mt-6">
+        <p class="text-fl-400">
+          Please provide us with a brief description of your project. We would be delighted to discuss our sustainable approach and how it
+          could benefit you.
+        </p><Button id="formBtn" className="button--inverted">Get in touch</Button>
+        <form id="contactForm" class="hidden || text-fl-300" netlify>
+          <div class="grid grid-cols-2 gap-x-8 gap-y-12">
+            <!-- Name -->
+            <div class="flex flex-col">
+              <label class="text-fl-200" for="name">Name</label>
+              <input
+                class="block || w-full mt-0 px-0.5 || border-0 border-b-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <!-- Email -->
+            <div class="flex flex-col">
+              <label class="text-fl-200" for="name">Email</label>
+              <input
+                class="block || w-full mt-0 px-0.5 || border-0 border-b-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <!-- Message -->
+            <div class="col-span-2 || flex flex-col">
+              <label class="text-fl-200" for="message">Tell us about your project</label>
+              <textarea
+                class="block || w-full mt-3 px-2 || border-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange"
+                rows="5"
+                name="message"
+                id="message"
+                required></textarea>
+            </div>
+            <!-- Budget -->
+            <div class="flex flex-col">
+              <label class="text-fl-200" class="text-fl-200" for="name">Estimated Budget</label>
+              <select
+                class="block || w-full mt-0 px-0.5 || border-0 border-b-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange || text-fl-300"
+                name="budget"
+                id="budget"
+                required
+              >
+                <option selected value="">Please select</option>
+                <option value="6to10">£6000 to £10,000</option>
+                <option value="10to20">£10,000 to £20,000</option>
+                <option value="20+">£20,000+</option>
+              </select>
+            </div>
+            <!-- Submit -->
+            <div class="flex flex-col || col-start-1">
+              <button class="button button--inverted || w-fit" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-between items-center || py-16 mx-9 || text-fl-300">
+    <p>© {year} Kimba Design</p>
+    <a href="/"><img src={kimbaLogo} alt="Kimba Design" width="130px" /></a>
+    <!-- contact -->
+    <div class="flex space-x-8">
+      <a href="mailto:hello@kimba.design">hello@kimba.design</a>
+      <!-- socials -->
+      <div class="flex items-center space-x-3">
+        <a href="https://mastodon.social"><Icon class="w-[19px]" name="icon-mastodon" /></a>
+        <a href="https://dribbble.com"><Icon class="w-[19px]" name="icon-dribbble" /></a>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<script>
+  const formBtn = document.getElementById('formBtn');
+  const contactForm = document.getElementById('contactForm');
+
+  formBtn.addEventListener('click', () => {
+    contactForm.classList.toggle('hidden');
+    formBtn.classList.toggle('hidden');
+  });
+</script>
+
+<style>
+  select {
+    /* Fix for coloured caret: https://github.com/tailwindlabs/tailwindcss-forms/issues/17 */
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.9983 1.20594L7.20421 8L0.410156 1.20594L1.6161 0L7.20421 5.58811L12.7923 0L13.9983 1.20594Z' fill='%23FCFCFC'/%3E%3C/svg%3E");
+    background-size: 14px;
+    background-position: bottom 12px right 0.25rem;
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+import ShadowWrapper from '../UI/ShadowWrapper.astro';
+import Button from '../UI/Button.astro';
+import Icon from 'astro-icon';
+
+const { href, text, bgImgURL } = Astro.props;
+---
+
+<ShadowWrapper shadowDepth="shallow">
+  <li class={`relative w-100 py-11`}>
+    <div class="flex justify-center items-center">
+      <div class="flex items-center gap-x-3">
+        <div class="z-10 || flex items-center justify-center space-x-3 || min-w-[300px] min-h-[38px] || bg-[#fefefe] rounded-[6px] || leading-none"><Icon class="w-[11px]" name="icon-padlock" /><p>{text}</p></div>
+        <Button href={href} className="button--circle || z-10 || peer">
+          <Icon class="w-[16px]" name="icon-arrow" />
+        </Button>
+        <div class={`absolute inset-0 || bg-cover opacity-25 peer-hover:opacity-95 transition-opcaity duration-500 bg-[url('${bgImgURL}')]`} aria-hidden="true"></div>
+      </div>
+    </div>
+  </li>
+</ShadowWrapper>
+
+<style>
+  /* Workaround to get tailwind to include class since its generated dynamically
+     Could also add to safelist list in tailwind.config.cjs
+     TODO: Fix! */
+  .oy-tailwind-add-me {
+    @apply bg-[url('https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-rowan.png?q=50&auto=format')];
+    @apply bg-[url('https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-cacaoette.png?q=50&auto=format')];
+    @apply bg-[url('https://kimba-imagecdn.imgix.net/kimba-design/projectlink-bg-willow.png?q=50&auto=format')];
+  }
+</style>
