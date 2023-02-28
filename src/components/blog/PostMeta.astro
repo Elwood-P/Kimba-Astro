@@ -4,12 +4,12 @@ import PostMetaTagList from './PostMetaTagList.astro';
 import authorData from '../../data/authors.json';
 
 const { content } = Astro.props;
-const { name: authorName } = authorData[content.author];
+const { name: authorName, avatarColor } = authorData[content.author];
 ---
 
 <div class="flex flex-wrap justify-center items-center || space-x-4 || text-fl-300">
   <div class="flex items-center || space-x-2">
-    <div class="flex items-end justify-center || w-[38px] h-[38px] || rounded-full bg-green || overflow-hidden">
+    <div class={`flex items-end justify-center || w-[38px] h-[38px] || rounded-full bg-${avatarColor} || overflow-hidden`}>
       <img
         src={`/assets/images/avatars/avatar-${content.author.toLowerCase()}.png`}
         class="imgr-contrast"

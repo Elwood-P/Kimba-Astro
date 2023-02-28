@@ -1,6 +1,10 @@
 {
   "Paul": {
     "name": "Paul Littlewood",
-    "avatar": "/someurl.png"
+    "avatarColor": "blue"
+  },
+  "Tiffany": {
+    "name": "Tiffany Littlewood",
+    "avatarColor": "orange"
   }
 }
