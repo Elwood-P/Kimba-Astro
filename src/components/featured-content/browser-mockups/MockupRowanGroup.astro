@@ -4,8 +4,8 @@ import MockupRowanListings from './MockupRowanListings.astro';
 import MockupRowanMob from './MockupRowanMob.astro';
 ---
 
-<div class="[ flex items-start ][ mt-32 ]">
-  <MockupRowanMob className="[ mt-[-5%] mr-[2%] ][ rellax ]" dataRellaxSpeed="2" />
-  <MockupRowanDT className="rellax" dataRellaxSpeed="4" />
-  <MockupRowanListings className="[ mt-[8.4%] ml-[-2%] ][ rellax ]" dataRellaxSpeed="5" />
+<div class="flex items-start || mt-32">
+  <MockupRowanMob className="hidden sm:block || mt-[-5%] mr-[2%]" />
+  <MockupRowanDT />
+  <MockupRowanListings className="hidden sm:block || sm:mt-[8.4%] sm:ml-[-2%]" />
 </div>
