@@ -5,6 +5,10 @@
 @layer utilities {
   /* Font Size */
 
+  .text-fl-50 {
+    font-size: fluid(10px, 12px, toRem);
+  }
+
   .text-fl-100 {
     font-size: fluid(12px, 15px, toRem);
   }
