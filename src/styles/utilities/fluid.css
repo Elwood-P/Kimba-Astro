@@ -49,6 +49,10 @@
     margin-block: fluid(80px, 120px, toRem);
   }
 
+  .py-fl-40 {
+    padding-block: fluid(80px, 120px, toRem);
+  }
+
   .mt-fl-96 {
     margin-top: fluid(58px, 96px, toRem);
   }
@@ -60,4 +64,5 @@
   .mb-fl-196 {
     margin-bottom: fluid(132px, 224px, toRem);
   }
+
 }

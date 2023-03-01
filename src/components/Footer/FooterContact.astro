@@ -2,8 +2,8 @@
 import Button from '../UI/Button.astro';
 ---
 
-<div class="py-32 mx-4 || bg-gray-400 rounded-tl-[180px] rounded-br-[180px] || text-chalk">
-  <div class="container-fluid || space-y-12 / lg:grid lg:grid-cols-12 lg:gap-x-10 lg:space-y-0">
+<div class="footer-contact || bg-gray-400 || text-chalk" style="">
+  <div class="container-fluid || px-10 md:px-12 lg:px-18 || space-y-12 / lg:grid lg:grid-cols-12 lg:gap-x-10 lg:space-y-0">
     <h2 class="col-span-5 || text-fl-700 font-bold">Ready to discuss your project?</h2>
     <div class="col-span-6 col-start-7 space-y-12 || mt-6">
       <p class="text-fl-400">
@@ -80,6 +80,13 @@ import Button from '../UI/Button.astro';
 </script>
 
 <style>
+  .footer-contact {
+    padding-block: fluid(60px, 120px, toRem);
+    margin-inline: fluid(0.625rem, 1rem);
+    border-bottom-right-radius: fluid(80px, 180px);
+    border-top-left-radius: fluid(80px, 180px);
+  }
+
   select {
     /* Fix for coloured caret: https://github.com/tailwindlabs/tailwindcss-forms/issues/17 */
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.9983 1.20594L7.20421 8L0.410156 1.20594L1.6161 0L7.20421 5.58811L12.7923 0L13.9983 1.20594Z' fill='%23FCFCFC'/%3E%3C/svg%3E");
