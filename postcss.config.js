@@ -50,7 +50,7 @@ function unit(value) {
 
 function fluid(minValue, maxValue, convertTo) {
   let minVW = '400px'; // TODO: Convert to css custom properties
-  let maxVW = '760px';
+  let maxVW = '1600px';
 
   if (convertTo == 'toRem') {
     minValue = toRem(minValue);

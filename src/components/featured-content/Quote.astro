@@ -5,6 +5,6 @@ const { linkText, href, color } = Astro.props;
 <figure>
   <blockquote class="italic text-fl-600 !leading-[166%]">
     <span class={`py-[.13em] pl-3 pr-3 bg-${color} box-decoration-clone`}><slot /></span>
-    <a class="[ block ] [ text-fl-300 italic text-right ]" href={href} target="_blank"><figcaption>{linkText}</figcaption></a>
+    <a class="block || text-fl-300 leading-400 italic text-right" href={href} target="_blank"><figcaption>{linkText}</figcaption></a>
   </blockquote>
 </figure>

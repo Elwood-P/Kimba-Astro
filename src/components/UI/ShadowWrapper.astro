@@ -1,11 +1,8 @@
 ---
-const { borderRadius, className, dataRellaxSpeed, shadowDepth } = Astro.props;
+const { borderRadius, className } = Astro.props;
 ---
 
-<div
-  class=`[ border border-[#dbdbdb] rounded-[${borderRadius ?? '10px'}] shadow${ shadowDepth ? '--' + shadowDepth : '' } ][ overflow-hidden ] ${className ? className : ''}`
-  data-rellax-speed={dataRellaxSpeed}
->
+<div class=`border border-[#dbdbdb] rounded-[${borderRadius ?? '10px'}] || overflow-hidden || shadow || ${className ? className : ''} `>
   <slot />
 </div>
 

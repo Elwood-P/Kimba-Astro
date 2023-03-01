@@ -30,13 +30,13 @@
   }
 
   .text-fl-700 {
-    font-size: fluid(37px, 52px, toRem);
+    font-size: fluid(40px, 52px, toRem);
     line-height: 1.1;
   }
 
   .text-fl-800 {
     font-size: fluid(44px, 62px, toRem);
-    line-height: .9;
+    line-height: 0.9;
   }
 
   /* Vertical Rhythm */
@@ -45,4 +45,15 @@
     margin-block: fluid(80px, 120px, toRem);
   }
 
+  .mt-fl-96 {
+    margin-top: fluid(58px, 96px, toRem);
+  }
+
+  .gap-fl-y-196 {
+    row-gap: fluid(132px, 224px, toRem);
+  }
+
+  .mb-fl-196 {
+    margin-bottom: fluid(132px, 224px, toRem);
+  }
 }

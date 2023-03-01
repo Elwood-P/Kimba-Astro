@@ -6,7 +6,7 @@ import Icon from 'astro-icon';
 const { href, text, bgImgURL } = Astro.props;
 ---
 
-<ShadowWrapper shadowDepth="shallow">
+<ShadowWrapper className="shadow--shallow border-[#00000024]">
   <li class={`relative || py-8 / w-100 sm:py-11`}>
     <div class="flex justify-center items-center">
       <div class="flex items-center gap-x-3">
@@ -14,7 +14,7 @@ const { href, text, bgImgURL } = Astro.props;
         <Button href={href} className="button--circle || z-10 || peer">
           <Icon class="w-[16px]" name="icon-arrow" />
         </Button>
-        <div class={`absolute inset-0 || bg-cover opacity-25 peer-hover:opacity-95 transition-opcaity duration-500 bg-[url('${bgImgURL}')]`} aria-hidden="true"></div>
+        <div class={`absolute inset-0 || bg-cover opacity-90 peer-hover:opacity-1000 transition-opcaity duration-500 bg-[url('${bgImgURL}')]`} aria-hidden="true"></div>
       </div>
     </div>
   </li>
