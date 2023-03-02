@@ -11,7 +11,7 @@ const { href, className, id } = Astro.props;
   )
 }
 
-<!-- If no href then button with script (which is found with component that called it) -->
+{/* If no href then button with script (which is found with component that called it) */}
 {
   !href && (
     <button id={id} href={href} class={`button ${className ? className : ''}`}>

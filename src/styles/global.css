@@ -4,3 +4,8 @@ body {
   @apply font-sans text-gray font-normal;
   -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 }
+
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+}

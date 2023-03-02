@@ -12,7 +12,7 @@ import Button from '../UI/Button.astro';
       </p><Button id="formBtn" className="button--inverted">Get in touch</Button>
       <form id="contactForm" class="hidden || text-fl-300" netlify>
         <div class="grid grid-cols-2 gap-x-8 gap-y-12">
-          <!-- Name -->
+          {/* Name */}
           <div class="flex flex-col">
             <label class="text-fl-200" for="name">Name</label>
             <input
@@ -23,7 +23,7 @@ import Button from '../UI/Button.astro';
               required
             />
           </div>
-          <!-- Email -->
+          {/* Email */}
           <div class="flex flex-col">
             <label class="text-fl-200" for="name">Email</label>
             <input
@@ -34,7 +34,7 @@ import Button from '../UI/Button.astro';
               required
             />
           </div>
-          <!-- Message -->
+          {/* Message */}
           <div class="col-span-2 || flex flex-col">
             <label class="text-fl-200" for="message">Tell us about your project</label>
             <textarea
@@ -44,7 +44,7 @@ import Button from '../UI/Button.astro';
               id="message"
               required></textarea>
           </div>
-          <!-- Budget -->
+          {/* Budget */}
           <div class="flex flex-col">
             <label class="text-fl-200" class="text-fl-200" for="name">Estimated Budget</label>
             <select
@@ -59,7 +59,7 @@ import Button from '../UI/Button.astro';
               <option value="20+">£20,000+</option>
             </select>
           </div>
-          <!-- Submit -->
+          {/* Submit */}
           <div class="flex flex-col || col-start-1">
             <button class="button button--inverted || w-fit" type="submit">Send</button>
           </div>
