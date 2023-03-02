@@ -4,8 +4,8 @@ const { className } = Astro.props;
 ---
 
 <ShadowWrapper className={className}>
-  <div class="border-b border-[#dbdbdb]">
-    {/* <img
+  {
+    /* <img
       data-sizes="auto"
       data-srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?w=826&q=75&auto=format 826w, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?q=50&auto=format 1656w"
       data-src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?q=50&auto=format"
@@ -13,14 +13,26 @@ const { className } = Astro.props;
       height="108"
       alt="Browser top for Rowan Clothing website"
       class="lazyload"
-    /> */}
-    <picture>
-      <source media="(max-width: 420px)" width="1656" height="108" srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?w=839&q=75&auto=format" />
-      <source media="(min-width: 421px)" width="1656" height="108" srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?w=839&q=75&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?q=50&auto=format 2x" />
-      <img src="newyork-rectangle.jpg" width="1656" height="108" alt="Browser top for Rowan Clothing website">
-    </picture>
-  </div>
-  {/* <img
+    /> */
+  }
+  <picture class="border-b border-[#dbdbdb]">
+    <source
+      media="(max-width: 639px)"
+      width="1656"
+      height="108"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?w=839&q=75&auto=format"
+    />
+    <source
+      media="(min-width: 640px)"
+      width="1656"
+      height="108"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?w=839&q=75&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?q=50&auto=format 2x"
+    />
+    <img src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-top.png?q=50&auto=format" width="1656" height="108" alt="Browser top for Rowan Clothing website" />
+  </picture>
+
+  {
+    /* <img
     data-sizes="auto"
     data-srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?w=839&q=75&auto=format 839w, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?q=50&auto=format 1656w"
     data-src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?q=50&auto=format"
@@ -28,10 +40,26 @@ const { className } = Astro.props;
     height="950"
     alt="Rowan Clothing website"
     class="lazyload"
-  /> */}
+  /> */
+  }
   <picture>
-    <source media="(max-width: 420px)" width="1656" height="950" srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?w=839&q=75&auto=format" />
-    <source media="(min-width: 421px)" width="1656" height="950" srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?w=839&q=75&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?q=50&auto=format 2x" />
-    <img src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?q=50&auto=format" width="1656" height="950" alt="Rowan Clothing website">
+    <source
+      media="(max-width: 420px)"
+      width="1656"
+      height="950"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?w=839&q=75&auto=format"
+    />
+    <source
+      media="(min-width: 421px)"
+      width="1656"
+      height="950"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?w=839&q=75&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?q=50&auto=format 2x"
+    />
+    <img
+      src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-dt-content.png?q=50&auto=format"
+      width="1656"
+      height="950"
+      alt="Rowan Clothing website"
+    />
   </picture>
 </ShadowWrapper>
