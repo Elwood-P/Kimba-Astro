@@ -18,19 +18,19 @@
 @font-face {
 font-family:"europa";
 src:url("https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3") format("opentype");
-font-display:swap;font-style:normal;font-weight:700;font-stretch:normal;
+font-style:normal;font-weight:700;font-stretch:normal;
 }
 
 @font-face {
 font-family:"europa";
 src:url("https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3") format("opentype");
-font-display:swap;font-style:normal;font-weight:400;font-stretch:normal;
+font-style:normal;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
 font-family:"europa";
 src:url("https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=i4&v=3") format("opentype");
-font-display:swap;font-style:italic;font-weight:400;font-stretch:normal;
+font-style:italic;font-weight:400;font-stretch:normal;
 }
 
 .tk-europa { font-family: "europa",sans-serif; }
