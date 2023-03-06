@@ -13,7 +13,7 @@ import Button from '../UI/Button.astro';
       <form id="contactForm" class="hidden || text-fl-300" netlify>
         <div class="grid grid-cols-2 gap-x-8 gap-y-12">
           {/* Name */}
-          <div class="flex flex-col">
+          <div class="flex flex-col col-span-2 sm:col-span-1">
             <label class="text-fl-200" for="name">Name</label>
             <input
               class="block || w-full mt-0 px-0.5 || border-0 border-b-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange"
@@ -24,7 +24,7 @@ import Button from '../UI/Button.astro';
             />
           </div>
           {/* Email */}
-          <div class="flex flex-col">
+          <div class="flex flex-col col-span-2 sm:col-span-1">
             <label class="text-fl-200" for="name">Email</label>
             <input
               class="block || w-full mt-0 px-0.5 || border-0 border-b-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange"
@@ -45,7 +45,7 @@ import Button from '../UI/Button.astro';
               required></textarea>
           </div>
           {/* Budget */}
-          <div class="flex flex-col">
+          <div class="flex flex-col col-span-2 sm:col-span-1">
             <label class="text-fl-200" class="text-fl-200" for="name">Estimated Budget</label>
             <select
               class="block || w-full mt-0 px-0.5 || border-0 border-b-2 border-chalk bg-transparent || focus:ring-0 focus:border-orange || text-fl-300"
