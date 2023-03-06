@@ -15,8 +15,8 @@
   /* Size */
   .button--sm {
     @apply 
-      min-h-[27px] px-3
-      text-fl-100 leading-none font-normal;
+      min-h-[36px] px-4
+      text-fl-300 leading-none font-normal;
   }
 
   .button--circle {

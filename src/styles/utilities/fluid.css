@@ -9,6 +9,10 @@
     font-size: fluid(10px, 12px, toRem);
   }
 
+  .text-fl-75 {
+    font-size: fluid(12px, 14px, toRem);
+  }
+
   .text-fl-100 {
     font-size: fluid(12px, 15px, toRem);
   }
