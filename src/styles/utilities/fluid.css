@@ -6,27 +6,23 @@
   /* Font Size */
 
   .text-fl-50 {
-    font-size: fluid(10px, 12px, toRem);
-  }
-
-  .text-fl-75 {
-    font-size: fluid(12px, 14px, toRem);
+    font-size: 12px;
   }
 
   .text-fl-100 {
-    font-size: fluid(12px, 15px, toRem);
+    font-size: fluid(14px, 15px, toRem);
   }
 
   .text-fl-200 {
-    font-size: fluid(13px, 16px, toRem);
+    font-size: fluid(15px, 16px, toRem);
   }
 
   .text-fl-300 {
-    font-size: fluid(15px, 18px, toRem);
+    font-size: fluid(17px, 18px, toRem);
   }
 
   .text-fl-400 {
-    font-size: fluid(18px, 21px, toRem);
+    font-size: fluid(19px, 21px, toRem);
   }
 
   .text-fl-500 {
@@ -34,7 +30,7 @@
   }
 
   .text-fl-600 {
-    font-size: fluid(26px, 38px, toRem);
+    font-size: fluid(27px, 38px, toRem);
   }
 
   .text-fl-700 {
@@ -43,29 +39,33 @@
   }
 
   .text-fl-800 {
-    font-size: fluid(44px, 62px, toRem);
+    font-size: fluid(50px, 62px, toRem);
     line-height: 0.9;
   }
 
-  /* Vertical Rhythm */
+  /* Vertical Rhythm - Named using largest setting in TW units (1rem = 4TW units) */
 
-  .my-fl-40 {
-    margin-block: fluid(80px, 120px, toRem);
+  .pb-fl-10 {
+    padding-bottom: fluid(40px, 80px, toRem);
   }
 
-  .py-fl-40 {
-    padding-block: fluid(80px, 120px, toRem);
-  }
-
-  .mt-fl-96 {
+  .mt-fl-24 {
     margin-top: fluid(58px, 96px, toRem);
   }
 
-  .gap-fl-y-196 {
+  .my-fl-30 {
+    margin-block: fluid(80px, 120px, toRem);
+  }
+
+  .py-fl-30 {
+    padding-block: fluid(80px, 120px, toRem);
+  }
+
+  .gap-fl-y-49 {
     row-gap: fluid(132px, 224px, toRem);
   }
 
-  .mb-fl-196 {
+  .mb-fl-49 {
     margin-bottom: fluid(132px, 224px, toRem);
   }
 
