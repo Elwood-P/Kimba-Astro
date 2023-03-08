@@ -1,0 +1,23 @@
+---
+import kimbaLogo from '../../images/ui/kimba-logo.svg';
+import Icon from 'astro-icon';
+import WebsiteCarbonBadge from './WebsiteCarbonBadge.astro';
+
+const year = new Date().getFullYear();
+---
+
+<div class="flex flex-col items-center gap-y-6 / md:flex-row md:justify-between || py-16 mx-6 || text-fl-300">
+  {/* WCBadge */}
+  <WebsiteCarbonBadge className="order-last self-auto / md:order-first md:self-end" />
+  {/* Logo */}
+  <a href="/"><img src={kimbaLogo} alt="Kimba Design" width="130px" height="34px" /></a>
+  {/* Contact */}
+  <div class="flex space-x-8">
+    <a href="mailto:hello@kimba.design">hello@kimba.design</a>
+    {/* Socials */}
+    <div class="flex items-center space-x-3">
+      <a href="https://mastodon.social"><Icon class="w-[19px]" name="icon-mastodon" /></a>
+      <a href="https://dribbble.com"><Icon class="w-[19px]" name="icon-dribbble" /></a>
+    </div>
+  </div>
+</div>

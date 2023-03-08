@@ -4,17 +4,48 @@ const {className, dataRellaxSpeed} = Astro.props;
 ---
 
 <ShadowWrapper className={className} dataRellaxSpeed={dataRellaxSpeed}>
-  <img
+  {/* <img
     src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-top.png?q=75&auto=format"
     width="816"
-    height="53"
+    height="54"
     alt="Browser top for Rowan Clothing website"
     class="[ border-b border-[#dbdbdb] ]"
-  />
-  <img
+  />  */}
+  <picture class="border-b border-[#dbdbdb]">
+    <source
+      media="(max-width: 639px)"
+      width="816"
+      height="54"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-top.png?w=840&q=75&auto=format"
+    />
+    <source
+      media="(min-width: 640px)"
+      width="816"
+      height="54"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-top.png?w=816&q=75&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-top.png?q=50&auto=format 2x"
+    />
+    <img src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-top.png?q=50&auto=format" width="816" height="54" alt="Browser top for Rowan Clothing website stats" />
+  </picture>
+  
+ {/* <img
     src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-content.png?q=50&auto=format"
     width="816"
     height="475"
     alt="Rowan Clothing website"
-  />
+  /> */}
+  <picture class="border-b border-[#dbdbdb]">
+    <source
+      media="(max-width: 639px)"
+      width="816"
+      height="475"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-content.png?w=840&q=75&auto=format"
+    />
+    <source
+      media="(min-width: 640px)"
+      width="816"
+      height="475"
+      srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-content.png?w=816&q=85&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-content.png?q=50&auto=format 2x"
+    />
+    <img src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-stats-content.png?q=50&auto=format" width="816" height="475" alt="Rowan Clothing website statistics" />
+  </picture>
 </MockupWrapper>

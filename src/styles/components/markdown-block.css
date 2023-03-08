@@ -1,6 +1,7 @@
 .markdown-block {
+  @apply pb-fl-10;
   > * + * {
-    /* @apply text-fl-mt; */
+    @apply mt-8;
   }  
   p {
     @apply text-fl-400;

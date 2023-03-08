@@ -6,8 +6,10 @@ const { className, dataRellaxSpeed } = Astro.props;
 <ShadowWrapper className={className} dataRellaxSpeed={dataRellaxSpeed}>
   <img
     src="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-listings.png?q=50&auto=format"
-    width="300"
-    height="292"
+    srcset="https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-listings.png?w=304&q=75&auto=format, https://kimba-imagecdn.imgix.net/kimba-design/mockup-rowan-listings.png?q=50&auto=format 2x"
+    width="304"
+    height="295"
     alt="Product listings for Rowan Clothing wesbite"
+    class="w-full"
   />
 </MockupWrapper>

@@ -9,45 +9,50 @@ import ProjectLink from '../components/featured-content/ProjectLink.astro';
 ---
 
 <SiteLayout title="Kimba Design" description="Kimba Design, Sustainable Web Design">
-  <div class="grid flex-col gap-y-56 || mb-96">
-    <!-- Hero -->
-    <section class="container-fluid || flex flex-col items-center || px-8 mt-32 || text-center">
-      <h1 class="mb-4 || text-fl-800 font-bold">Sustainable ecommerce</h1>
-      <p class="mb-8 || text-fl-500">We build bespoke, efficient, eco-friendly, websites.</p>
+  <div class="grid flex-col gap-fl-y-49 || mb-fl-49">
+    {/* Hero */}
+    <section class="container-fluid || flex flex-col items-center || px-6 mt-fl-24 || text-center">
+      <h1 class="mb-4 || text-fl-800 font-bold">Sustainable Websites</h1>
+      <p class="mb-6 || text-fl-500">We build bespoke, efficient, eco&#8209;friendly, websites.</p>
       <Button href="#section--greener">Explore</Button>
       <MockupRowanGroup />
     </section>
 
-    <!-- Section Greener -->
-    <section id="section--greener" class="container-fluid || grid grid-cols-12 gap-x-10">
+    {/* Section Greener */}
+    <section id="section--greener" class="container-fluid || lg:grid lg:grid-cols-12 lg:gap-x-10">
       <div class="col-span-6 space-y-8">
-        <h2 class="text-fl-700 font-bold">Building a greener web</h2>
+        <h2 class="text-fl-700 font-bold">Building a Greener Web</h2>
         <p class="text-fl-400">
           The move to an online world has been assumed to be greener, but its environmental impacts are being overlooked. Vast amounts of
           data is being stored and transmitted indiscriminately, and the data centres responsible require immense amounts of energy.
         </p>
+        <div class="lg:hidden">
+          <Quote color="green" linkText="nature.com" href="https://www.nature.com/articles/d41586-018-06610-y">
+            If the internet was a country, it would be the 7th largest polluter.
+          </Quote>
+        </div>
         <p class="text-fl-400">We build low carbon websites to help combat this growing issue. Read more about how and why, on our blog.</p>
         <Button className="!mt-10" href="/posts">Visit Blog</Button>
       </div>
-      <div class="col-span-5 col-start-8 self-center">
+      <div class="hidden lg:block || col-span-6 lg:col-span-5 lg:col-start-8 self-center">
         <Quote color="green" linkText="nature.com" href="https://www.nature.com/articles/d41586-018-06610-y">
           If the internet was a country, it would be the 7th largest polluter.
         </Quote>
       </div>
     </section>
 
-    <!-- Section Efficient -->
+    {/* Section Efficient */}
     <div class="relative">
-      <section class="container-fluid || grid grid-cols-12 gap-x-10">
+      <section class="container-fluid || flex flex-col-reverse lg:block || gap-y-8 / lg:grid lg:grid-cols-12 lg:gap-x-10 lg:space-y-0">
         <div class="col-span-5">
           <div
-            class="absolute left-0 w-[45%] max-w-fit || before:absolute before:w-[30%] before:content-[''] before:inset-0 before:top-[-50px] before:bottom-[-100px] before:bg-gradient-to-r before:from-chalk before:to-transparent"
+            class="max-w-[600px] / lg:absolute lg:left-0 lg:w-[48%] lg:max-w-fit / xl:w-[45%] || lg:before:absolute before:w-[30%] lg:before:content-[''] before:inset-0 md:before:top-[-50px] before:bottom-[-100px] before:bg-gradient-to-r before:from-chalk before:to-transparent"
           >
             <MockupStats />
           </div>
         </div>
         <div class="col-span-6 col-start-7 space-y-8">
-          <h2 class="text-fl-700 font-bold">Efficient websites are good for business</h2>
+          <h2 class="text-fl-700 font-bold">Efficient Websites Are Good for Business</h2>
           <p class="text-fl-400">
             Efficiently built websites load quickly, and a fast loading website is good for business. Not only will it provide a better
             experience for users, but it can also give your business an advantage in the search engine rankings.
@@ -59,8 +64,8 @@ import ProjectLink from '../components/featured-content/ProjectLink.astro';
       </section>
     </div>
 
-    <!-- Section New -->
-    <section class="container-fluid || grid grid-cols-12 gap-x-10">
+    {/* Section New */}
+    <section class="container-fluid || space-y-12 / lg:grid lg:grid-cols-12 lg:gap-x-10 lg:space-y-0">
       <div class="col-span-5 space-y-8">
         <h2 class="text-fl-700 font-bold">We're New!</h2>
         <p class="text-fl-400">

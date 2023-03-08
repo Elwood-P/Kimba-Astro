@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Light
 description: Light, electromagnetic radiation that can be detected by the human eye.
-author: Paul
+author: Tiffany
 date: 07 Jan 2022
 tags:
   - technology

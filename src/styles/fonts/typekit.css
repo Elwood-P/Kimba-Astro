@@ -1,0 +1,36 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * europa:
+ *   - http://typekit.com/eulas/00000000000000007735a081
+ *   - http://typekit.com/eulas/00000000000000007735a08e
+ *   - http://typekit.com/eulas/00000000000000007735a08f
+ *
+ * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2023-02-27 12:00:45 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=ovj0paf&ht=tk&f=15528.15530.17252&a=576956&app=typekit&e=css");
+
+@font-face {
+font-family:"europa";
+src:url("https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3") format("woff2");
+font-display:swap;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"europa";
+src:url("https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3") format("woff2");
+font-display:swap;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+/* @font-face {
+font-family:"europa";
+src:url("https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=i4&v=3") format("woff2");
+font-display:swap;font-style:italic;font-weight:400;font-stretch:normal;
+} */
+
+.tk-europa { font-family: "europa",sans-serif; }
