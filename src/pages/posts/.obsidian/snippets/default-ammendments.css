@@ -1,0 +1,24 @@
+.view-content {
+  font-weight: 400;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header {
+  /* margin-top: 2em !important;
+  margin-bottom: 1em !important; */
+  font-weight: 600 !important;
+}
+
+.HyperMD-header .cm-header-1, .HyperMD-header .cm-header-2, .HyperMD-header .cm-header-3 {
+  color: #f1f1f1;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cm-strong, .HyperMD-header .cm-header-4, .HyperMD-header .cm-header-5, .HyperMD-header .cm-header-6 {
+  color: #fbe685;
+}
+
+/* Fix for Db hover */
+div.database-plugin__td.data-input:hover {
+    z-index: 100;
+}
