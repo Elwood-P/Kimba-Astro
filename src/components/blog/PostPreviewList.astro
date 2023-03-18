@@ -23,6 +23,6 @@ const publishedPosts = allPosts.filter((post) => !post.frontmatter.tags.includes
   </header>
 
   <div class="flex flex-col space-y-20">
-    {publishedPosts.map((post)=> <PostPreview post={post} /> { console.log(post.frontmatter.tags)} )}
+    {publishedPosts.map((post)=> <PostPreview post={post} />)}
   </div>
 </div>
