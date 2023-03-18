@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "code.md",
+                "file": "Sustainability Meets Searchability.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "code.md",
+                "file": "Sustainability Meets Searchability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "code.md",
+                "file": "Sustainability Meets Searchability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "code.md"
+                "file": "Sustainability Meets Searchability.md"
               }
             }
           }
@@ -169,8 +169,8 @@
   },
   "active": "530fa78691252ce0",
   "lastOpenFiles": [
-    "Sustainability Meets Searchability.md",
     "From Code to Carbon Footprint.md",
+    "Sustainability Meets Searchability.md",
     "code.md",
     "why.md",
     "Context"
