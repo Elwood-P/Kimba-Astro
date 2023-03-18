@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Future of Web Design is Green - How to Build Sustainable Websites.md",
+                "file": "Sustainability Meets Searchability.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,8 +64,17 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "273965d7dd5123ea",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Future of Web Design is Green - How to Build Sustainable Websites.md",
+                "file": "Sustainability Meets Searchability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Future of Web Design is Green - How to Build Sustainable Websites.md",
+                "file": "Sustainability Meets Searchability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Future of Web Design is Green - How to Build Sustainable Websites.md"
+                "file": "Sustainability Meets Searchability.md"
               }
             }
           }
@@ -148,7 +157,10 @@
   },
   "active": "530fa78691252ce0",
   "lastOpenFiles": [
+    "From Code to Carbon Footprint.md",
+    "Sustainability Meets Searchability.md",
+    "code.md",
     "why.md",
-    "The Future of Web Design is Green - How to Build Sustainable Websites.md"
+    "Context"
   ]
 }
