@@ -3,20 +3,19 @@ import '../styles/app.css';
 import SiteLayout from './SiteLayout.astro';
 import PostMeta from '../components/blog/PostMeta.astro';
 
-const {content} = Astro.props;
+const { content } = Astro.props;
 ---
 
 <SiteLayout title={content.title} description={content.description}>
-  <div class="container-fluid || max-w-[760px] || mx-auto">
-
+  <div class="container-fluid || max-w-[920px] || mx-auto">
     <header class="flex flex-col space-y-4 || my-fl-30 text-center">
-      <h1 class="text-fl-800 font-bold">{content.title}</h1>
+      <h1 class="text-fl-700 font-bold">{content.title}</h1>
       <PostMeta content={content} />
     </header>
-
+  </div>
+  <div class="container-fluid || max-w-[900px] || mx-auto">
     <article class="markdown-block || my-fl-30">
       <slot />
-    </article>  
-
+    </article>
   </div>
 </SiteLayout>

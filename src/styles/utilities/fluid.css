@@ -26,21 +26,22 @@
   }
 
   .text-fl-500 {
-    font-size: fluid(21px, 24px, toRem);
+    font-size: fluid(21px, 26px, toRem);
   }
 
   .text-fl-600 {
     font-size: fluid(27px, 38px, toRem);
+    line-height: 1.25;
   }
 
   .text-fl-700 {
     font-size: fluid(40px, 52px, toRem);
-    line-height: 1.1;
+    line-height: 1.05;
   }
 
   .text-fl-800 {
     font-size: fluid(50px, 62px, toRem);
-    line-height: 0.9;
+    line-height: 1.05;
   }
 
   /* Vertical Rhythm - Named using largest setting in TW units (1rem = 4TW units) */
@@ -67,6 +68,10 @@
 
   .mb-fl-49 {
     margin-bottom: fluid(132px, 224px, toRem);
+  }
+
+  .my-fl-49 {
+    margin-block: fluid(132px, 224px, toRem);
   }
 
 }
