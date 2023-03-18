@@ -5,6 +5,7 @@ import PostPreview from './PostPreview.astro';
 import tagsData from '../../data/tags.json';
 
 const {tag, allPosts} = Astro.props;
+const publishedPosts = allPosts.filter((post) => !post.frontmatter.tags.includes('draft'));
 ---
 
 <div class="[ container ][ max-w-[760px] ][ mx-auto px-8 my-fl-30 ]">
@@ -22,6 +23,6 @@ const {tag, allPosts} = Astro.props;
   </header>
 
   <div class="flex flex-col space-y-20">
-    {allPosts.map((post)=> <PostPreview post={post} />)}
+    {publishedPosts.map((post)=> <PostPreview post={post} /> { console.log(post.frontmatter.tags)} )}
   </div>
 </div>
