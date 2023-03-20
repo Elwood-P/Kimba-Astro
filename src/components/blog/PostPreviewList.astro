@@ -4,25 +4,36 @@ import Button from '../UI/Button.astro';
 import PostPreview from './PostPreview.astro';
 import tagsData from '../../data/tags.json';
 
-const {tag, allPosts} = Astro.props;
+const { tag, allPosts } = Astro.props;
+const allTags = Object.keys(tagsData).filter((tag) => tag != 'draft');
 const publishedPosts = allPosts.filter((post) => !post.frontmatter.tags.includes('draft'));
 ---
 
 <div class="[ container ][ max-w-[760px] ][ mx-auto px-8 my-fl-30 ]">
   <header class="[ flex flex-col items-center space-y-10 ][ my-fl-30 text-center ]">
     <h1 class="text-fl-800 font-bold">Blog</h1>
-    <p class="text-fl-500">Featuring articles on sustainable web design, exploring the reasons behind it and ways to make a positive impact to both the planet and your business.</p>
+    <p class="text-fl-500">
+      Featuring articles on sustainable web design, exploring the reasons behind it and ways to make a positive impact to both the planet
+      and your business.
+    </p>
     <div class="flex flex-row items-center space-x-3">
       <Button href="/posts/" className={`button--sm ${tag ? 'button--light' : ''}`} }>All</Button>
-      {Object.keys(tagsData).map((tagData) => 
-        <Button href={`/posts/tag/${tagData}`} className={`capitalize button--sm ${tag === tagData ? 'button--' + tagsData[tagData].color : 'button--light-' + tagsData[tagData].color}`}>
-          {tagData}
-        </Button>
-      )}
+      {
+        allTags.map((tagData) => (
+          <Button
+            href={`/posts/tag/${tagData}`}
+            className={`capitalize button--sm ${
+              tag === tagData ? 'button--' + tagsData[tagData].color : 'button--light-' + tagsData[tagData].color
+            }`}
+          >
+            {tagData}
+          </Button>
+        ))
+      }
     </div>
   </header>
 
   <div class="flex flex-col space-y-20">
-    {publishedPosts.map((post)=> <PostPreview post={post} />)}
+    {publishedPosts.map((post) => <PostPreview post={post} />)}
   </div>
 </div>
