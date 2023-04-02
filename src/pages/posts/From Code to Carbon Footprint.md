@@ -17,7 +17,7 @@ The move to an online world has been assumed to be greener, but its environmenta
 > <span>If the internet was a country, it would be the 7th largest polluter.</span>
 >[nature.com](https://www.nature.com/articles/d41586-018-06610-y)
 
-The issue is becoming more pronounced as network technology continues to advance. With each upgrade, we find new ways to utilise the available bandwidth and consume more data. In 2020, the internet's energy consumption amounted to a staggering 4% of the world's total, and experts predict that this number could rise to 14% by 2040.
+The issue is becoming more pronounced as network technology continues to advance. With each upgrade, we find new ways to utilise the available bandwidth and consume more data. In 2020, the internet's energy consumption amounted to a staggering [4% of the world's total](https://www.theguardian.com/environment/2017/dec/11/tsunami-of-data-could-consume-fifth-global-electricity-by-2025), and experts predict that this number could [rise to 14% by 2040](https://www.theguardian.com/environment/2017/dec/11/tsunami-of-data-could-consume-fifth-global-electricity-by-2025).
 
 It's increasingly clear that the internet has a substantial environmental impact, and we must take action to reduce its carbon footprint. Implementing sustainable web design and development practices is crucial to achieving this goal.
 
