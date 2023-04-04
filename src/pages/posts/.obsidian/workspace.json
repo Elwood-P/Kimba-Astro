@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sustainability Meets Searchability.md",
+                "file": "Eco-Friendly Efficiency.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "From Code to Carbon Footprint.md",
+                "file": "Eco-Friendly Efficiency.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "From Code to Carbon Footprint.md",
+                "file": "Eco-Friendly Efficiency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "From Code to Carbon Footprint.md",
+                "file": "Eco-Friendly Efficiency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "From Code to Carbon Footprint.md"
+                "file": "Eco-Friendly Efficiency.md"
               }
             }
           }
@@ -170,9 +170,10 @@
   },
   "active": "7b951e30a141750c",
   "lastOpenFiles": [
-    "Sustainability Meets Searchability.md",
-    "From Code to Carbon Footprint.md",
     "code.md",
+    "Eco-Friendly Efficiency.md",
+    "Wasteful WordPress.md",
+    "From Code to Carbon Footprint.md",
     "why.md",
     "Context"
   ]
