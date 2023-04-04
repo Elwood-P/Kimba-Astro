@@ -31,4 +31,25 @@
       @apply block text-fl-300 leading-400 italic text-right border-0;
     }
   }
+
+  & :not(pre) > code {
+    font-family: 'Andale Mono', monospace;
+    display: inline-flex;
+    padding: toRem(3px) toRem(4px);
+    margin-inline: toRem(2px);
+    border-radius: 4px;
+    font-size: .75em;
+    line-height: 100%;
+    letter-spacing: .01em;
+    @apply bg-chalk-500;
+  }
+
+  ul {
+    > * + * {
+      @apply mt-8;
+    } 
+  }
+  li {
+    @apply text-fl-400;
+  }
 }
