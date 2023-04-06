@@ -1,10 +1,3 @@
-![Version](https://img.shields.io/badge/Version-0.0.1-blue)
-<!-- When published use this for automatic badge udpate /github/package-json/v/Elwood-P/Kimba-Astro -->
-
-
-![Screenshot](./img/screenshot.png)
-
-
 # Kimba Design: Website & Blog
 > Home of Kimba Design. Efficient, eco-friendly websites.  
 > 🚀 An experiment in using Astro SSG which has recently released 1.0 Beta.  
