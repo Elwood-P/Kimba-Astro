@@ -8,7 +8,7 @@
 - Custom fluid Tailwind text and vertical spacing utilities
 
 ## Technologies Used
-- [Astro ](https://github.com/withastro/astro)
+- [Astro](https://github.com/withastro/astro)
 - [Tailwind](https://github.com/tailwindlabs/tailwindcss) via [astrojs/tailwind](https://github.com/withastro/astro/tree/main/packages/integrations/tailwind)
 - Netlify
 
