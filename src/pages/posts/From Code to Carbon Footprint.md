@@ -33,7 +33,7 @@ When designing a website, it's common to fall into the trap of including too man
 
 ### Images
 
-Images typically comprise around [50% of a web page’s total size](https://almanac.httparchive.org/en/2022/page-weight#fig-8) and are a prime target for optimisation. It’s important to use responsive image techniques that deliver appropriately sized images to various devices. Additionally, newer file types such as WEBP should be used, which can drastically reduce file size. Unfortunately, it’s common to see these modern techniques completely ignored leading to page sizes ballooning to 10MB or more. With proper optimisation, however, these bloated pages could easily be reduced to a fraction of their current size.
+Images typically comprise around [50% of a web page’s total size](https://almanac.httparchive.org/en/2022/page-weight#fig-8) and are a prime target for optimisation. It’s important to use responsive image techniques that deliver appropriately sized images to various devices. Also, newer file types such as WEBP should be used, which can drastically reduce file size. Unfortunately, it’s common to see these modern techniques completely ignored leading to page sizes ballooning to 10MB or more. With proper optimisation, however, these bloated pages could easily be reduced to a fraction of their current size.
 
 ### Code
 
@@ -45,7 +45,7 @@ It's important to also minify your code and enable compression on your web serve
 
 We’ve focused on optimising for data efficiency, but it’s equally important to choose a web hosting service that has minimal impact on the environment. Fortunately, more and more green hosting companies are emerging, offering data centres that run on renewable energy. [The Green Web Foundation](https://www.thegreenwebfoundation.org/directory/) provides a helpful directory to locate hosting providers that have provided evidence of their green claims.
 
-It is crucial to be discerning when assessing a company’s green claims, particularly when they use terms such as “[100% renewable energy](https://www.forbes.com/sites/joshuarhodes/2018/08/21/what-does-100-renewable-energy-really-mean/?sh=2dbe3fa51ac8)” as these claims can be nuanced. Other factors to consider include whether the hosting company owns the renewable energy sources, purchases them, or uses credits for carbon offsetting. Additionally, it’s worth exploring the company’s efforts to reduce energy consumption through efficiency measures and investments in renewable energy infrastructure.
+It is crucial to be discerning when assessing a company’s green claims, particularly when they use terms such as “[100% renewable energy](https://www.forbes.com/sites/joshuarhodes/2018/08/21/what-does-100-renewable-energy-really-mean/?sh=2dbe3fa51ac8)” as these claims can be nuanced. Other factors to consider include whether the hosting company owns the renewable energy sources, purchases them, or uses credits for carbon offsetting. It’s also worth exploring the company’s efforts to reduce energy consumption through efficiency measures and investments in renewable energy infrastructure.
 
 ## Summary
 
