@@ -24,3 +24,4 @@ $ git push origin main
 ## Todo
 - [ ] Pagination to index pages
 - [ ] Extract custom tailwind utilities into a plugin
+- [ ] Update Website Carbon badge to be dynamic (currently homepage data is used for every page)
