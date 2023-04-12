@@ -1,11 +1,11 @@
 # Kimba Design: Website & Blog
 
-> Kimba Design. Efficient, eco-friendly websites.
-> Built with Astro.
+> Kimba Design. Efficient, eco-friendly websites.  
+> Built with Astro.  
 > [View Project Live](https://kimba.design)
 
 ## Key Features
-- Astro blog with tags integration
+- Astro blog with support for tags and drafts
 - Custom fluid Tailwind text and vertical spacing utilities
 
 ## Technologies Used
@@ -23,5 +23,5 @@ $ git push origin main
 ```
 
 ## Todo
-- [ ] Pagination on index pages
+- [ ] Pagination to index pages
 - [ ] Extract custom tailwind utilities into a plugin
