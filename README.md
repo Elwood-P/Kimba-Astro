@@ -1,7 +1,7 @@
 # Kimba Design: Website & Blog
 
-> Kimba Design. Efficient, eco-friendly websites.
-> Built with Astro.
+> Kimba Design. Efficient, eco-friendly websites.  
+> Built with Astro.  
 > [View Project Live](https://kimba.design)
 
 ## Key Features
