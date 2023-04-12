@@ -1,33 +1,27 @@
 # Kimba Design: Website & Blog
-> Home of Kimba Design. Efficient, eco-friendly websites.  
-> 🚀 An experiment in using Astro SSG which has recently released 1.0 Beta.  
-> Live project [kimba.design](https://kimba.design)  
 
+> Kimba Design. Efficient, eco-friendly websites.
+> Built with Astro.
+> [View Project Live](https://kimba.design)
+
+## Key Features
+- Astro blog with tags integration
+- Custom fluid Tailwind text and vertical spacing utilities
 
 ## Technologies Used
-- [Astro 1.0.0-beta.17](https://github.com/withastro/astro)
-- [Tailwind v3.0.24](https://github.com/tailwindlabs/tailwindcss) via [astrojs/tailwind v0.2.0](https://github.com/withastro/astro/tree/main/packages/integrations/tailwind)
-- See [package-lock.json](https://github.com/Elwood-P/Kimba-Astro/blob/main/package-lock.json) for complete list
+- [Astro ](https://github.com/withastro/astro)
+- [Tailwind](https://github.com/tailwindlabs/tailwindcss) via [astrojs/tailwind](https://github.com/withastro/astro/tree/main/packages/integrations/tailwind)
+- Netlify
 
+  ## Setup
+```shell
+# Run local server (Vite)
+$ npm run dev
 
-## Features
-- Astro blog with tags
-- Custom fluid Tailwind text and vertical spacing utlitities
-
-
-## Setup
+# Publish changes live to Netlify
+$ git push origin main
 ```
-# Install dependencies
-$ npm install
-```
-
 
 ## Todo
-- [ ] Homepage
 - [ ] Pagination on index pages
-- [ ] Contact Form
-- [ ] Polish custom TW utilities - to be extracted into a plugin  
-
-
-## Contact
-Created by [@Elwood-P](https://kimba.design)
+- [ ] Extract custom tailwind utilities into a plugin
