@@ -5,7 +5,7 @@
 > [View Project Live](https://kimba.design)
 
 ## Key Features
-- Astro blog with tags
+- Astro blog with tags integration
 - Custom fluid Tailwind text and vertical spacing utilities
 
 ## Technologies Used
